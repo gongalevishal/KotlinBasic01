@@ -20,7 +20,18 @@ fun main() {
 
     print(avg)
 
+    val op = Operations()
+    op minus 5
+    print(op.x)
 
+
+}
+
+class Operations {
+    var x = 10;
+    infix fun minus(num: Int) {
+        this.x = this.x - num
+    }
 }
 
 data class Fruit(val name: String, val price: Double)
