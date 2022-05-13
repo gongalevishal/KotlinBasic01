@@ -1,5 +1,7 @@
 package com.ceinsys.kotlinbasic
 
+import android.util.Log
+
 fun main() {
 
     val numberList = arrayOf(1, 5, 8, 9, 10, 7, 15)
@@ -16,10 +18,11 @@ fun main() {
         total += list
     }
 
+
     val avg = total / arralyList.size
 
     print(avg)
-
+    Log.e("hello", "======$avg")
     val op = Operations()
     op minus 5
     print(op.x)
